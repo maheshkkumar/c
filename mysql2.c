@@ -1,3 +1,8 @@
+/*
+	Author : Mahesh Kumar
+	Program : Integrating MySQL with C
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <mysql/mysql.h>
@@ -6,11 +11,11 @@ int main(void)
 {
 
 	static char *host = "localhost";
-	static char *username = "username";
-	static char *password = "password";
+	static char *username = "username"; // MySQL username
+	static char *password = "password"; // MySQL password
 	static char *dbname = "mysql";
 	
-	unsigned int port = 3306;
+	unsigned int port = 3306; // MySQL port number will be in /etc/mysql/my.cnf
 	static char *unix_socket = NULL;
 	unsigned int flag = 0;
 	
